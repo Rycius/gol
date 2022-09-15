@@ -48,8 +48,6 @@ int32 CountNeighbors(bool *world, int32 cellX, int32 cellY)
             int32 x = (GRID_WIDTH + cellX + xd) % GRID_WIDTH;
             int32 y = (GRID_HEIGHT + cellY + yd) % GRID_HEIGHT;
 
-            if(x < 0 || x >= GRID_WIDTH || y < 0 || y >= GRID_HEIGHT) continue;
-
             int32 index = y*GRID_WIDTH+x;
             if(world[index]) result++;
         }
