@@ -32,13 +32,6 @@ void RandInit(bool *world, int32 n, int32 seed)
             alive++;
         }
     }
-
-    for(int32 i = 0; i < n; i++)
-    {
-        int32 rx = GetRandomValue(0, GRID_WIDTH);
-        int32 ry = GetRandomValue(0, GRID_HEIGHT);
-        world[ry*GRID_WIDTH+rx] = ALIVE;
-    }
 }
 
 
